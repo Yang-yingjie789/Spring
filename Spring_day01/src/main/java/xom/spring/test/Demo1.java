@@ -8,4 +8,7 @@ public class Demo1 {
         helloWorld.setName("Japan");
         helloWorld.hello();
     }
+    public void test(){
+        System.out.println("Hello git project");
+    }
 }
