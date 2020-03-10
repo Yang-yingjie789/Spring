@@ -6,9 +6,11 @@ import xom.spring.service.CategoryService;
 
 public class CategoryServiceImpl implements CategoryService {
     //CategoryDao categoryDao= (CategoryDao) Beanfactory.getBean("categoryDao");
-    private CategoryDao categoryDao= (CategoryDao) Beanfactory.getBean("categoryDao");
+     private int i=1;
     public void saveCategory() {
-        int i=1;
+
+        CategoryDao categoryDao= (CategoryDao) Beanfactory.getBean("categoryDao");
+
         System.out.println("categoryDao ："+categoryDao);
         categoryDao.saveCategory();
         System.out.println(i);
